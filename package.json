@@ -1,0 +1,21 @@
+{
+  "name": "davecarter-dev-site",
+  "version": "1.0.0",
+  "description": "David Garcia Personal site",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npx parcel -p 3000 watch src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "David G.",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "1.11.0",
+    "react": "16.8.2",
+    "react-dom": "16.8.2"
+  },
+  "devDependencies": {
+    "sass": "1.17.0"
+  }
+}

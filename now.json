@@ -1,0 +1,13 @@
+{
+  "alias": ["davecarter.dev"],
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@now/static"
+    },
+    {
+      "src": "src/index.js",
+      "use": "@now/node"
+    }
+  ]
+}

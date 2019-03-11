@@ -3,7 +3,7 @@
   "alias": ["davecarter.dev"],
   "builds": [
     {
-      "src": "*.html",
+      "src": "src/*.html",
       "use": "@now/static"
     },
     {

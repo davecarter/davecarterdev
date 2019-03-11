@@ -7,7 +7,7 @@
       "use": "@now/static"
     },
     {
-      "src": "src/index.js",
+      "src": "./src/index.js",
       "use": "@now/node"
     }
   ]

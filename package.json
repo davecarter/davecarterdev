@@ -4,8 +4,8 @@
   "description": "David Garcia Personal site",
   "main": "src/index.js",
   "scripts": {
-    "start": "npx parcel -p 3000 watch src/index.html",
-    "build": "parcel build src/index.html"
+    "start": "npx parcel -p 3000 watch index.html",
+    "build": "parcel build index.html"
   },
   "keywords": [],
   "author": "David G.",

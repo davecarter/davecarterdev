@@ -1,7 +1,7 @@
 {
-  "short_name": "DaveDev",
-  "name": "DavecarterDev Site",
-  "start_url": "/?source=pwa",
+  "name": "davecarter.dev site",
+  "short_name": "DavecarterDev",
+  "start_url": "/?utm_source=web_app_manifest",
   "background_color": "#444444",
   "display": "standalone",
   "scope": "/",

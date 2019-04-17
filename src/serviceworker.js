@@ -1,1 +1,1 @@
-console.log("Registered! 🐼");
+console.log("Successfully registered!");

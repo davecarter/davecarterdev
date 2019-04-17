@@ -1,17 +1,22 @@
 console.log("Davecarter.dev");
+import React from "react";
+import ReactDOM from "react-dom";
+import { register } from "./register";
+import "./index.scss";
 
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./serviceworker.js").then(
-      registration => {
-        console.log(
-          "ServiceWorker registration successful with scope: ",
-          registration.scope
-        );
-      },
-      function(err) {
-        console.log("ServiceWorker registration failed: ", err);
-      }
-    );
-  });
-}
+const App = () => {
+  register();
+  return (
+    <main>
+      <header className="headingsContainer">
+        <h1 className="mainHeading">davecarter.dev personal portfolio</h1>
+        <h3 className="mainSubHeading">
+          Some of my contributions as a frontend developer based in Barcelona.
+        </h3>
+        <p />
+      </header>
+    </main>
+  );
+};
+
+ReactDOM.render(<App />, document.querySelector("#app"));

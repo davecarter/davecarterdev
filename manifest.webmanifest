@@ -1,8 +1,8 @@
 {
   "name": "davecarter.dev site",
-  "short_name": "DavecarterDev",
+  "short_name": "Davecarter.dev",
   "start_url": "/?utm_source=web_app_manifest",
-  "background_color": "#444444",
+  "background_color": "#FAFAFA",
   "display": "standalone",
   "scope": "/",
   "theme_color": "#000000",

@@ -3,12 +3,11 @@
   "alias": ["davecarter.dev"],
   "builds": [
     {
-      "src": "*.html",
-      "use": "@now/static"
-    },
-    {
-      "src": "src/index.js",
-      "use": "@now/node"
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "dist"
+      }
     }
   ]
 }

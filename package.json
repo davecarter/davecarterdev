@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "start": "npx parcel -p 3000 watch index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "now-build": "npm run build"
   },
   "keywords": [],
   "author": "David G.",

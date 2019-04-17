@@ -1,1 +1,17 @@
-console.log('Davecarter.dev')
+console.log("Davecarter.dev");
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./serviceworker.js").then(
+      registration => {
+        console.log(
+          "ServiceWorker registration successful with scope: ",
+          registration.scope
+        );
+      },
+      function(err) {
+        console.log("ServiceWorker registration failed: ", err);
+      }
+    );
+  });
+}

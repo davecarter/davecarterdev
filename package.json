@@ -4,6 +4,7 @@
   "description": "David Garcia Personal site",
   "main": "src/index.js",
   "scripts": {
+    "co": "npx sui-mono commit",
     "start": "npx sui-bundler dev",
     "build": "npx sui-bundler build -C",
     "postbuild": "cp -R static public",
@@ -36,7 +37,12 @@
     }
   },
   "eslintConfig": {
-    "extends": ["./node_modules/@s-ui/lint/eslintrc.js"]
+    "extends": [
+      "./node_modules/@s-ui/lint/eslintrc.js"
+    ]
   },
-  "sasslintConfig": "./node_modules/@s-ui/lint/sass-lint.yml"
+  "sasslintConfig": "./node_modules/@s-ui/lint/sass-lint.yml",
+  "devDependencies": {
+    "@s-ui/mono": "1"
+  }
 }

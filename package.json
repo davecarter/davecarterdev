@@ -7,7 +7,7 @@
     "co": "npx sui-mono commit",
     "start": "npx sui-bundler dev",
     "build": "npx sui-bundler build -C",
-    "postbuild": "cp -R static public",
+    "postbuild": "cp -R static public && cp src/firebase-messaging-sw.js public",
     "now-build": "npm run build"
   },
   "keywords": [],
@@ -16,6 +16,7 @@
   "dependencies": {
     "@s-ui/bundler": "5",
     "@s-ui/lint": "2",
+    "firebase": "5.10.0",
     "react": "16.8.2",
     "react-dom": "16.8.2"
   },

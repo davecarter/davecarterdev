@@ -1,18 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {register} from '@s-ui/bundler/registerServiceWorker'
+import {ResponsivePicture} from './components/ResponsivePicture/index'
+import {homeSources} from './components/ResponsivePicture/sources'
 import './index.scss'
 
 const App = () => {
   return (
     <main>
       <header className="headingsContainer">
-        <h1 className="mainHeading">davecarter.dev personal portfolio</h1>
-        <h3 className="mainSubHeading">
-          Some of my contributions as a frontend developer based in Barcelona.
+        <h1 className="mainHeading">davecarter.dev</h1>
+        <h2 className="mainSubheading">personal site</h2>
+        <h3 className="mainDescription">
+          These are some of my contributions as a frontend developer based in
+          Barcelona.
         </h3>
         <p>Made with ♥</p>
       </header>
+      <ResponsivePicture sources={homeSources} />
     </main>
   )
 }

@@ -119,3 +119,5 @@ typings/
 *.scss.map
 
 # End of https://www.gitignore.io/api/node,sass,macos
+public/
+.tern-port

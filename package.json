@@ -4,20 +4,39 @@
   "description": "David Garcia Personal site",
   "main": "src/index.js",
   "scripts": {
-    "start": "npx parcel -p 3000 watch index.html",
-    "build": "parcel build index.html",
+    "start": "npx sui-bundler dev",
+    "build": "npx sui-bundler build -C",
+    "postbuild": "cp -R static public",
     "now-build": "npm run build"
   },
   "keywords": [],
   "author": "David G.",
   "license": "ISC",
   "dependencies": {
-    "parcel-bundler": "1.11.0",
+    "@s-ui/bundler": "5",
+    "@s-ui/lint": "2",
     "react": "16.8.2",
     "react-dom": "16.8.2"
   },
-  "devDependencies": {
-    "eslint": "5.15.1",
-    "sass": "1.17.0"
-  }
+  "sui-bundler": {
+    "offline": {
+      "whitelist": [
+        "::all::"
+      ],
+      "runtime": [
+        {
+          "urlPattern": "fonts\\.googleapis\\.com",
+          "handler": "cacheFirst"
+        },
+        {
+          "urlPattern": "static\\/images",
+          "handler": "cacheFirst"
+        }
+      ]
+    }
+  },
+  "eslintConfig": {
+    "extends": ["./node_modules/@s-ui/lint/eslintrc.js"]
+  },
+  "sasslintConfig": "./node_modules/@s-ui/lint/sass-lint.yml"
 }

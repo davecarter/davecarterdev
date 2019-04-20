@@ -8,7 +8,7 @@
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/src/images/dc-icon-large.png",
+      "src": "/static/images/dc-icon-large.png",
       "type": "image/png",
       "sizes": "512x512"
     }

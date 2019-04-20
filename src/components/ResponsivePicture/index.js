@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react'
+import PropTypes from 'prop-types'
 
-export const ResponsivePicture = ({ sources }) => {
-  const { imageSources, image } = sources;
+export const ResponsivePicture = ({sources}) => {
+  const {imageSources, image} = sources
   const renderSources = () => {
     return imageSources.map(source => (
       <source
@@ -10,13 +11,17 @@ export const ResponsivePicture = ({ sources }) => {
         srcSet={source.srcset}
         type={source.type}
       />
-    ));
-  };
+    ))
+  }
 
   return (
     <picture className="responsivePicture">
       {renderSources()}
-      <img src={image.src} />
+      <img className="responsivePicture-image" src={image.src} />
     </picture>
-  );
-};
+  )
+}
+
+ResponsivePicture.propTypes = {
+  sources: PropTypes.object
+}

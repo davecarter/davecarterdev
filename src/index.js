@@ -1,7 +1,10 @@
 console.log("Davecarter.dev");
 import React from "react";
 import ReactDOM from "react-dom";
+
 import { register } from "./register";
+import { homeSources } from "./sources";
+import { ResponsivePicture } from "./components/ResponsivePicture";
 import "./index.scss";
 
 const App = () => {
@@ -13,7 +16,7 @@ const App = () => {
         <h3 className="mainSubHeading">
           Some of my contributions as a frontend developer based in Barcelona.
         </h3>
-        <p />
+        <ResponsivePicture sources={homeSources} />
       </header>
     </main>
   );

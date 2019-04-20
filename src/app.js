@@ -11,7 +11,7 @@ const App = () => {
         <h3 className="mainSubHeading">
           Some of my contributions as a frontend developer based in Barcelona.
         </h3>
-        <p />
+        <p>Made with ♥</p>
       </header>
     </main>
   )
